@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'OpenSansRegular';
+    src: url('../fonts/OpenSansRegular.woff');
+    font-style: normal;
+    font-weight: 400;
+}
+
+// @font-face {
+//     font-family: 'OpenSansSemiBold';
+//     src: url('../fonts/OpenSansRegular.woff');
+//     font-style: normal;
+//     
+// }
+@font-face {
+    font-family: 'OpenSansSemiBold';
+    src: url('../fonts/OpenSansSemibold.ttf');
+    font-style: normal;
+}
+$fs:16px;
+$ops-reg: "OpenSansRegular", "Arial";
+$ops-sbld: "OpenSansSemiBold", "Arial";
