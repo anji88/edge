@@ -321,7 +321,11 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 select {
-    appearance: none;
+    -webkit-appearance: none; 
+   -moz-appearance: none;
+   appearance: none;       /* remove default arrow */
+   background-image: url("../images/drop-down.svg");  
+   background-repeat: no-repeat /* add custom arrow */
 }
 
 select::-ms-expand {

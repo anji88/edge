@@ -74,6 +74,7 @@
     &__banner-inputs{
         max-width: 420px;
         width: 100%;
+        z-index: 4;
     }
     &__banner-sub-text{
         color: #EAEBEB;
@@ -91,7 +92,7 @@
             max-width: 52px;
             margin: 2px 8px 2px 2px;
             width: 100%;
-            background: url('../images/edgefxspritesheet.png') no-repeat -517px -360px;
+            background: url('../images/edgefxspritesheet.png') no-repeat -642px -360px;
             height: 32px;
 
         }
@@ -99,17 +100,8 @@
             font-size: 14px;
             color:#69767D;
             border: none;
-            width: 260px;
-            position: relative;
-            &:after{
-                content: "";
-                position: absolute;
-                width: 10px;
-                height: 10px;
-                background: #839697;
-                right: 10px;
-
-            }
+           width:calc(100% - 80px);
+            background-position: right;
         }
     }
     
@@ -132,17 +124,8 @@
             font-size: 14px;
             color:#69767D;
             border: none;
-            width: 260px;
-            position: relative;
-            &:after{
-                content: "";
-                position: absolute;
-                width: 10px;
-                height: 10px;
-                background: #839697;
-                right: 10px;
-
-            }
+           width:calc(100% - 80px);
+            background-position: right;
         }
     }
     &__contact-us{
@@ -167,6 +150,19 @@
     font-size: 16px;
     text-align: center;
     margin-left: auto;
+    position: relative;
+     &::after{
+        content: "";
+        content: "";
+        position: absolute;
+        width: 12px;
+        height: 16px;
+        background: url(../images/click-arrow.svg);
+        background-repeat: no-repeat;
+        top: 9px;
+        right: 6px;
+        z-index: 2; 
+    }
     }
     &__branch-and-year{
         border-radius: 4px;
@@ -180,7 +176,7 @@
             max-width: 52px;
             margin: 2px 8px 2px 2px;            
             width: 100%;
-            background: url('../images/edgefxspritesheet.png') no-repeat -642px -360px;
+            background: url('../images/edgefxspritesheet.png') no-repeat -517px -360px;
             height: 32px;
 
         }
@@ -189,20 +185,15 @@
             color:#69767D;
             border: none;
             width: 260px;
-            position: relative;
+            background-position-x: 95%;
+            background-position-y: center;
             &:last-child{
                 width: auto;
                 border-left: 1px solid #69767D;
                 padding-left: 10px;
-            }
-            &:after{
-                content: "";
-                position: absolute;
-                width: 10px;
-                height: 10px;
-                background: #839697;
-                right: 10px;
-
+                background-position-x: 95%;
+                background-position-y: center;
+                width: 80px;
             }
         }
     }
@@ -700,11 +691,15 @@ background: url('../images/edgefxspritesheet.png') no-repeat -284px -188px;
     position: absolute;
     bottom: 0px;
     left: 0px;
+    opacity: 0.5;
+
 }
 .edge__bottom-left{
     position: absolute;
     bottom: 0px;
     right: 0px;
+    opacity: 0.5;
+
 }
 .edge__bottom-right{
     position: absolute;
