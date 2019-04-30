@@ -4,6 +4,28 @@
         background: url("../images/banner_bg.png");
         background-size: cover;
         background-repeat: no-repeat;
+        position: relative;
+        &:after{
+            content: "";
+            position: absolute;
+            width: 25%;
+            height: 100%;
+            background: url("../images/header-top-layer.png");            
+            top: 0px;
+            left: 0px;
+
+        }
+        &:before{
+            content: "";
+            position: absolute;
+            width: 25%;
+            height: 100%;
+            background: url("../images/header-top-layer.png");            
+            top: 0px;
+            right: 0px;
+
+        }
+        
     }
     &__header-block{
         background:  #0A3248;
@@ -202,7 +224,7 @@
         }
     }
     &__profile-photo-wapper{
-        max-width: 130px;
+        max-width: 100px;
         width: 100%;
     }
     &__profile-content{
@@ -259,7 +281,7 @@
             font-size: 20px;
             line-height: 24px;
             padding-bottom: 20px;
-
+            max-width: 230px;
         }
         .edge__profile-name {
             display: flex;
@@ -302,7 +324,7 @@
     .edge__profile-info{
         display: flex;
         align-items: center;
-        max-width: 70%;
+        max-width: 80%;
         width: 100%;
         justify-content: space-between;
         h1{
@@ -373,10 +395,10 @@ padding-top: 20px;
 
 .edge__navlinks-section{
     display: flex;
-    align-items: center;
+    align-items:flex-start;
     max-width: 1000px;
     width: 100%;
-    margin: 10px auto 0px auto;
+    margin: 15px auto 0px auto;
     position: relative;
     z-index: 1;
 }
@@ -408,13 +430,29 @@ padding-top: 20px;
     justify-content: space-between;
     margin-top: 50px;
     z-index: 1;
-    a{
+    li{
         display: block;
+        list-style: none;
     }
     .cash{
         background: url('../images/edgefxspritesheet.png') no-repeat -644px -8px;
 	width: 152px;
 	height: 64px;
+    }
+    .bulk{
+        background: url('../images/edgefxspritesheet.png') no-repeat -633px -181px;
+	width: 156px;
+	height: 56px;
+    }
+    .gurant{
+        background: url('../images/edgefxspritesheet.png') no-repeat -588px -282px;
+	width: 182px;
+	height: 54px;
+    }
+    .happy{
+        background: url('../images/edgefxspritesheet.png') no-repeat -94px -183px;
+	width: 173px;
+	height: 60px;
     }
     .dealivery{
     background: url('../images/edgefxspritesheet.png') no-repeat -627px -97px;
@@ -465,6 +503,18 @@ padding-top: 20px;
     }
     .facebook{
         background: url('../images/edgefxspritesheet.png') no-repeat -52px -110px;
+    }
+    .twitter{
+        background: url('../images/edgefxspritesheet.png') no-repeat -154px -110px; 
+    }
+    .play-store{
+        background: url('../images/edgefxspritesheet.png') no-repeat -256px -110px;
+    }
+    .play-plus{
+        background: url('../images/edgefxspritesheet.png') no-repeat -461px -110px;
+    }
+    .bloger{
+        background: url('../images/edgefxspritesheet.png') no-repeat -563px -110px;
     }
 }
 .edge__footer-photo-block{
@@ -554,7 +604,7 @@ padding-top: 20px;
     display: flex;
     align-items: center;
 }
-.footer-img-block{
+.edge__footer-img-block{
     .edge__footer-img-wapper{
         margin-bottom: 20px;
         margin-right: 20px;
@@ -563,7 +613,7 @@ padding-top: 20px;
 
 
 
-.footer-sign-up-text{
+.edge__footer-sign-up-text{
 font-size: 16px;
 color:#fff;
 }
@@ -631,7 +681,7 @@ background: url('../images/edgefxspritesheet.png') no-repeat -284px -188px;
 	width: 108px;
 	height: 40px;
 } 
-.footer-address-section{
+.edge__footer-address-section{
     max-width: 400px;
     width: 100%;
     font-size: 12px;
@@ -654,7 +704,7 @@ background: url('../images/edgefxspritesheet.png') no-repeat -284px -188px;
 .edge__bottom-left{
     position: absolute;
     bottom: 0px;
-    right: 10px;
+    right: 0px;
 }
 .edge__bottom-right{
     position: absolute;

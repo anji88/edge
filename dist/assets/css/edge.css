@@ -129,7 +129,7 @@ html {
 
 body {
   color: #1a1a1d;
-  background-color: #fff !important;
+  background-color: #E4E4E4 !important;
   font-family: "OpenSansRegular", "Arial";
   font-weight: 400;
   font-style: normal;
@@ -876,6 +876,27 @@ button {
   background: url("../images/banner_bg.png");
   background-size: cover;
   background-repeat: no-repeat;
+  position: relative;
+}
+
+.edge__header:after {
+  content: "";
+  position: absolute;
+  width: 25%;
+  height: 100%;
+  background: url("../images/header-top-layer.png");
+  top: 0px;
+  left: 0px;
+}
+
+.edge__header:before {
+  content: "";
+  position: absolute;
+  width: 25%;
+  height: 100%;
+  background: url("../images/header-top-layer.png");
+  top: 0px;
+  right: 0px;
 }
 
 .edge__header-block {
@@ -1096,7 +1117,7 @@ button {
 }
 
 .edge__profile-photo-wapper {
-  max-width: 130px;
+  max-width: 100px;
   width: 100%;
 }
 
@@ -1161,6 +1182,7 @@ button {
   font-size: 20px;
   line-height: 24px;
   padding-bottom: 20px;
+  max-width: 230px;
 }
 
 .edge__video-profile .edge__profile-name {
@@ -1211,7 +1233,7 @@ button {
 .edge__users .edge__profile-info {
   display: flex;
   align-items: center;
-  max-width: 70%;
+  max-width: 80%;
   width: 100%;
   justify-content: space-between;
 }
@@ -1288,10 +1310,10 @@ button {
 
 .edge__navlinks-section {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   max-width: 1000px;
   width: 100%;
-  margin: 10px auto 0px auto;
+  margin: 15px auto 0px auto;
   position: relative;
   z-index: 1;
 }
@@ -1327,14 +1349,33 @@ button {
   z-index: 1;
 }
 
-.edge__footer-patners-block a {
+.edge__footer-patners-block li {
   display: block;
+  list-style: none;
 }
 
 .edge__footer-patners-block .cash {
   background: url("../images/edgefxspritesheet.png") no-repeat -644px -8px;
   width: 152px;
   height: 64px;
+}
+
+.edge__footer-patners-block .bulk {
+  background: url("../images/edgefxspritesheet.png") no-repeat -633px -181px;
+  width: 156px;
+  height: 56px;
+}
+
+.edge__footer-patners-block .gurant {
+  background: url("../images/edgefxspritesheet.png") no-repeat -588px -282px;
+  width: 182px;
+  height: 54px;
+}
+
+.edge__footer-patners-block .happy {
+  background: url("../images/edgefxspritesheet.png") no-repeat -94px -183px;
+  width: 173px;
+  height: 60px;
 }
 
 .edge__footer-patners-block .dealivery {
@@ -1385,6 +1426,22 @@ button {
 
 .edge__footer-social-icons-section .facebook {
   background: url("../images/edgefxspritesheet.png") no-repeat -52px -110px;
+}
+
+.edge__footer-social-icons-section .twitter {
+  background: url("../images/edgefxspritesheet.png") no-repeat -154px -110px;
+}
+
+.edge__footer-social-icons-section .play-store {
+  background: url("../images/edgefxspritesheet.png") no-repeat -256px -110px;
+}
+
+.edge__footer-social-icons-section .play-plus {
+  background: url("../images/edgefxspritesheet.png") no-repeat -461px -110px;
+}
+
+.edge__footer-social-icons-section .bloger {
+  background: url("../images/edgefxspritesheet.png") no-repeat -563px -110px;
 }
 
 .edge__footer-photo-block {
@@ -1469,12 +1526,12 @@ button {
   align-items: center;
 }
 
-.footer-img-block .edge__footer-img-wapper {
+.edge__footer-img-block .edge__footer-img-wapper {
   margin-bottom: 20px;
   margin-right: 20px;
 }
 
-.footer-sign-up-text {
+.edge__footer-sign-up-text {
   font-size: 16px;
   color: #fff;
 }
@@ -1540,7 +1597,7 @@ button {
   height: 40px;
 }
 
-.footer-address-section {
+.edge__footer-address-section {
   max-width: 400px;
   width: 100%;
   font-size: 12px;
@@ -1550,7 +1607,7 @@ button {
   margin: 30px auto;
 }
 
-.footer-address-section p:first-child {
+.edge__footer-address-section p:first-child {
   max-width: 260px;
   width: 100%;
   margin: 0px auto 30px auto;
@@ -1565,7 +1622,7 @@ button {
 .edge__bottom-left {
   position: absolute;
   bottom: 0px;
-  right: 10px;
+  right: 0px;
 }
 
 .edge__bottom-right {
